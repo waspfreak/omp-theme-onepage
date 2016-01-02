@@ -386,6 +386,9 @@ header .header_top {
 main {
   flex: 1 0 auto; }
 
+header {
+  z-index: 1; }
+
 nav {
   background-color: rgba(255, 255, 255, 0.5);
   position: absolute; }
@@ -397,12 +400,28 @@ nav {
 .parallax-container {
   height: 650px; }
 
+.home__overlay_pattern {
+  background-image: url(../img/pattern.png);
+  filter: alpha(opacity=40);
+  height: 100%;
+  left: 0;
+  opacity: .9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: 0; }
+
 .section-module {
   display: block;
   padding-top: 50px;
   color: #213b4d; }
   .section-module h3 {
     color: #f66b00; }
+
+.full_width_grey_module {
+  background-color: #edeeef;
+  padding: 30px; }
 
 footer.page-footer {
   margin-top: 20px;
