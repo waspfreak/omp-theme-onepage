@@ -1,0 +1,90 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: $fontdefault;
+  color: $withe;
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+header{
+  & .header_top {
+    background: $indigo;
+    display: block;
+    overflow: hidden;
+    padding: 5px 30px;
+    width: 100%;
+    & .row{
+      margin-bottom: 0px;
+    }
+  }
+}
+
+main {
+  flex: 1 0 auto;
+}
+nav{
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  & ul{
+    & li{
+      color: $indigo;
+    }
+    & li a{
+      color: $indigo;
+    }
+  }
+}
+
+.parallax-container{
+  height: 650px;
+}
+.section-module{
+  display: block;
+  padding-top: 50px;
+  color: $indigo;
+    & h3{
+      color: $orange;
+    }
+}
+
+
+footer.page-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: $indigo;
+}
+
+.footer-copyright {
+  font-size: 16px;
+}
+
+.footer__icons {
+    text-align: right;
+    & a{
+      color: $withe;
+      transition: .2s ease-out;
+      &:hover{ color: $indigo;}
+    }
+}
+
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 320px) {
+
+}
